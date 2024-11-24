@@ -1,0 +1,59 @@
+/* General styling for the form */
+form {
+  background-color: #f8f8ff;
+  /* Light background color */
+  border: 1px solid #ccc;
+  /* Subtle border */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the form */
+  font-family: Arial, sans-serif;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Label for the checkbox */
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Sign-up button */
+button,
+input[type="submit"] {
+  background-color: #5e2aa8;
+  /* Purple color for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #472092;
+  /* Slightly darker shade */
+}
