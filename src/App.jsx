@@ -18,16 +18,18 @@ export default function App() {
 
   function handleSubmit(event) {
     event.preventDefault()
-    if (formData.password === formData.passwordConfirm) {
-      console.log("Successfully signed up")
-    } else {
-      console.log("Passwords donot match")
-      return
+    if (formData.password !== formData.passwordConfirm) {
+      console.log("Passwords do not match");
+      return; // Exit early if passwords don't match
     }
 
     if (formData.joinedNewsletter) {
-      console.log("Thanks for signing up")
+      console.log("Thanks for signing up!"); // Only log this if the newsletter checkbox is checked
+    } else {
+      console.log("Successfully signed up"); // Only log this if the newsletter checkbox is not checked
     }
+
+
   }
 
   return (
